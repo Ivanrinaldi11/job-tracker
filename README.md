@@ -32,7 +32,7 @@ Desenvolver uma ferramenta simples para organizar candidaturas e praticar manipu
 
 ## Deploy Online
 
-(Coloque aqui o link após ativar o GitHub Pages)
+( https://ivanrinaldi11.github.io/job-tracker/)
 
 ---
 
