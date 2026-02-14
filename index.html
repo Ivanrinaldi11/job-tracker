@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Job Tracker</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="container">
+    <h1>📂 Job Application Tracker</h1>
+
+    <!-- ESTATÍSTICAS -->
+    <section class="stats">
+      <div class="card">
+        <h3>Total Aplicações</h3>
+        <p id="total">0</p>
+      </div>
+      <div class="card">
+        <h3>Entrevistas</h3>
+        <p id="entrevistas">0</p>
+      </div>
+      <div class="card">
+        <h3>Aprovado</h3>
+        <p id="aprovado">0</p>
+      </div>
+    </section>
+
+    <!-- FORMULÁRIO -->
+    <section class="form-section">
+      <h2>Nova Aplicação</h2>
+      <form id="form">
+
+        <input type="text" id="empresa" placeholder="Empresa" required>
+        <input type="text" id="cargo" placeholder="Cargo" required>
+
+        <select id="status" required>
+          <option value="Enviado">Enviado</option>
+          <option value="Entrevista">Entrevista</option>
+          <option value="Aprovado">Aprovado</option>
+          <option value="Rejeitado">Rejeitado</option>
+        </select>
+
+        <input type="date" id="data" required>
+        <textarea id="obs" placeholder="Observações"></textarea>
+
+        <button type="submit">Adicionar</button>
+      </form>
+    </section>
+
+    <!-- FILTRO -->
+    <section class="filtro">
+      <label>Filtrar por status:</label>
+      <select id="filtroStatus">
+        <option value="Todos">Todos</option>
+        <option value="Enviado">Enviado</option>
+        <option value="Entrevista">Entrevista</option>
+        <option value="Aprovado">Aprovado</option>
+        <option value="Rejeitado">Rejeitado</option>
+      </select>
+    </section>
+
+    <!-- LISTA -->
+    <section class="lista">
+      <ul id="lista"></ul>
+    </section>
+
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
