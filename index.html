@@ -1,73 +1,232 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
+
   <meta charset="UTF-8">
+
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Job Tracker</title>
+
+  <title>CareerFlow</title>
+
   <link rel="stylesheet" href="style.css">
+
+  <!-- FONT -->
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
 </head>
+
 <body>
 
-  <div class="container">
-    <h1>📂 Job Application Tracker</h1>
+  <!-- SIDEBAR -->
 
-    <!-- ESTATÍSTICAS -->
+  <aside class="sidebar">
+
+    <div>
+
+      <h2>
+        CareerFlow
+      </h2>
+
+      <nav>
+
+        <a href="#" class="nav-item">
+          Dashboard
+        </a>
+
+        <a href="#" class="nav-item">
+          Applications
+        </a>
+
+        <a href="#" class="nav-item">
+          Statistics
+        </a>
+
+      </nav>
+
+    </div>
+
+    <!-- LANGUAGE -->
+
+    <div class="language-toggle">
+
+      <button id="pt-btn">
+        🇧🇷 PT
+      </button>
+
+      <button id="en-btn">
+        🌎 EN
+      </button>
+
+    </div>
+
+  </aside>
+
+  <!-- MAIN -->
+
+  <main class="main-content">
+
+    <!-- TOPBAR -->
+
+    <header class="topbar">
+
+      <h1 id="title">
+        Aplicações de Emprego
+      </h1>
+
+      <p id="subtitle">
+        Gerencie suas oportunidades de forma organizada
+      </p>
+
+    </header>
+
+    <!-- STATS -->
+
     <section class="stats">
-      <div class="card">
-        <h3>Total Aplicações</h3>
-        <p id="total">0</p>
+
+      <div class="stat-card">
+
+        <span id="total-text">
+          Total
+        </span>
+
+        <h2 id="total-jobs">
+          0
+        </h2>
+
       </div>
-      <div class="card">
-        <h3>Entrevistas</h3>
-        <p id="entrevistas">0</p>
+
+      <div class="stat-card">
+
+        <span id="interview-text">
+          Entrevistas
+        </span>
+
+        <h2 id="interview-count">
+          0
+        </h2>
+
       </div>
-      <div class="card">
-        <h3>Aprovado</h3>
-        <p id="aprovado">0</p>
+
+      <div class="stat-card">
+
+        <span id="pending-text">
+          Pendentes
+        </span>
+
+        <h2 id="pending-count">
+          0
+        </h2>
+
       </div>
+
+      <div class="stat-card">
+
+        <span id="rejected-text">
+          Rejeitados
+        </span>
+
+        <h2 id="rejected-count">
+          0
+        </h2>
+
+      </div>
+
     </section>
 
-    <!-- FORMULÁRIO -->
+    <!-- FORM -->
+
     <section class="form-section">
-      <h2>Nova Aplicação</h2>
-      <form id="form">
 
-        <input type="text" id="empresa" placeholder="Empresa" required>
-        <input type="text" id="cargo" placeholder="Cargo" required>
+      <h2 id="form-title">
+        Nova Aplicação
+      </h2>
 
-        <select id="status" required>
-          <option value="Enviado">Enviado</option>
-          <option value="Entrevista">Entrevista</option>
-          <option value="Aprovado">Aprovado</option>
-          <option value="Rejeitado">Rejeitado</option>
+      <form id="job-form">
+
+        <input
+          type="text"
+          id="company"
+          placeholder="Empresa"
+          required
+        >
+
+        <input
+          type="text"
+          id="position"
+          placeholder="Cargo"
+          required
+        >
+
+        <select id="status">
+
+          <option value="Pending">
+            Pendente
+          </option>
+
+          <option value="Interview">
+            Entrevista
+          </option>
+
+          <option value="Rejected">
+            Rejeitado
+          </option>
+
         </select>
 
-        <input type="date" id="data" required>
-        <textarea id="obs" placeholder="Observações"></textarea>
+        <button type="submit" id="submit-btn">
+          Adicionar
+        </button>
 
-        <button type="submit">Adicionar</button>
       </form>
+
     </section>
 
-    <!-- FILTRO -->
-    <section class="filtro">
-      <label>Filtrar por status:</label>
-      <select id="filtroStatus">
-        <option value="Todos">Todos</option>
-        <option value="Enviado">Enviado</option>
-        <option value="Entrevista">Entrevista</option>
-        <option value="Aprovado">Aprovado</option>
-        <option value="Rejeitado">Rejeitado</option>
-      </select>
+    <!-- SEARCH -->
+
+    <section class="search-section">
+
+      <input
+        type="text"
+        id="search"
+        placeholder="Pesquisar aplicações..."
+      >
+
     </section>
 
-    <!-- LISTA -->
-    <section class="lista">
-      <ul id="lista"></ul>
+    <!-- EMPTY -->
+
+    <div class="empty-state" id="empty-state">
+
+      <h3 id="empty-title">
+        Nenhuma aplicação cadastrada
+      </h3>
+
+      <p id="empty-text">
+        Comece adicionando sua primeira oportunidade.
+      </p>
+
+    </div>
+
+    <!-- JOBS -->
+
+    <section class="jobs-container" id="jobs-container">
+
     </section>
 
-  </div>
+  </main>
 
-  <script src="app.js"></script>
+  <!-- TOAST -->
+
+  <div id="toast"></div>
+
+  <script src="script.js"></script>
+
 </body>
+
 </html>
