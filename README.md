@@ -1,40 +1,72 @@
-# 📂 Job Application Tracker
 
-Aplicação desenvolvida para organizar e acompanhar candidaturas a vagas de emprego.
 
-## 🚀 Funcionalidades
+# CareerFlow 🚀
 
-- ✅ Cadastro de empresa e cargo
-- ✅ Controle de status (Enviado, Entrevista, Aprovado, Rejeitado)
-- ✅ Filtro por status
-- ✅ Estatísticas automáticas
-- ✅ Remoção de aplicações
-- ✅ Persistência de dados com LocalStorage
+Plataforma moderna para gerenciamento de candidaturas de emprego desenvolvida com foco em organização, produtividade e experiência do usuário.
 
-## 🧠 Tecnologias Utilizadas
-
-- HTML5
-- CSS3
-- JavaScript (ES6+)
-- LocalStorage API
-
-## Conceitos Aplicados
-
-- Estrutura de dados com array de objetos
-- Manipulação de DOM
-- Métodos de array (`filter`, `forEach`)
-- Atualização dinâmica da interface
-- Persistência de dados no navegador
-
-## Objetivo do Projeto
-
-Desenvolver uma ferramenta simples para organizar candidaturas e praticar manipulação de dados no front-end sem uso de frameworks.
-
-## Deploy Online
-
-( https://ivanrinaldi11.github.io/job-tracker/)
+O projeto foi criado para praticar desenvolvimento Front-end moderno utilizando JavaScript puro, manipulação de DOM, responsividade e persistência de dados com LocalStorage.
 
 ---
 
-Desenvolvido por Ivan.
-```
+# 🌐 Live Demo
+
+🔗 https://ivanrinaldi11.github.io/job-tracker/
+
+---
+
+# 📸 Preview
+
+Aplicação inspirada em dashboards SaaS modernos com:
+
+- Interface profissional
+- Dashboard interativo
+- Sistema multilíngue (PT-BR / EN)
+- Estatísticas em tempo real
+- Pesquisa dinâmica
+- Persistência de dados
+- Layout responsivo
+
+---
+
+# ✨ Funcionalidades
+
+## ✅ Gerenciamento de candidaturas
+
+- Adicionar aplicações
+- Excluir aplicações
+- Organização visual das vagas
+
+---
+
+## 🌎 Sistema multilíngue
+
+Suporte para:
+
+- Português (PT-BR)
+- English (EN)
+
+---
+
+## 📊 Dashboard de estatísticas
+
+Indicadores automáticos de:
+
+- Total de candidaturas
+- Entrevistas
+- Pendentes
+- Rejeitadas
+
+---
+
+## 🔎 Pesquisa dinâmica
+
+Filtro instantâneo de candidaturas utilizando JavaScript.
+
+---
+
+## 💾 Persistência de dados
+
+Os dados são armazenados utilizando:
+
+```bash
+LocalStorage
