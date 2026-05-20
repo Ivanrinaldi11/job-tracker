@@ -70,3 +70,58 @@ Os dados são armazenados utilizando:
 
 ```bash
 LocalStorage
+
+🛠 Tecnologias Utilizadas
+-HTML5
+-CSS3
+-JavaScript
+-LocalStorage
+-Responsive Design
+-🎨 Design
+
+O projeto foi desenvolvido seguindo conceitos modernos de:
+
+-SaaS UI
+-UX/UI
+-Minimalismo
+-Responsividade
+-Hierarquia visual
+-Componentização visual
+-📱 Responsividade
+
+Interface adaptada para:
+
+-Desktop
+-Tablet
+-Mobile
+📂 Estrutura do Projeto
+-careerflow/
+│
+├── index.html
+├── style.css
+├── script.js
+└── README.md
+
+🚀 Como Executar
+-Clone o repositório
+-git clone https://github.com/Ivanrinaldi11/job-tracker.git
+
+-Abra o projeto
+
+-Basta abrir: index.html no navegador.
+
+📌 Objetivo do Projeto
+
+Este projeto foi desenvolvido com o objetivo de:
+
+-Praticar JavaScript
+-Evoluir lógica de programação
+-Trabalhar manipulação de DOM
+-Criar interfaces modernas
+-Simular aplicações reais de mercado
+-Desenvolver experiência prática para portfólio profissional
+
+👨‍💻 Autor
+-Ivanilson Rinaldi
+-GitHub: https://github.com/Ivanrinaldi11
+-Portfolio: https://ivanrinaldi11.github.io/portfolio_ivan/
